@@ -67,7 +67,7 @@ section {
 /* Navigation Styles*/
 .navbar__menu ul {
   padding-left: 0;
-  margin: 0;
+  /* margin: 0; */
   text-align: right;
 }
 
@@ -183,7 +183,7 @@ section:nth-of-type(3n) .landing__container::after {
 }
 #nav__menu ul {
   padding-left: 0;
-  margin: 0;
+  /* margin: 0; */
   text-align: center;
 }
 

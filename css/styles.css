@@ -67,15 +67,17 @@ section {
 /* Navigation Styles*/
 .navbar__menu ul {
   padding-left: 0;
-  /* margin: 0; */
   text-align: right;
 }
 
 .navbar__menu li {
   display: inline-block;
 }
+#navbar__list {
+  text-align: center;
+}
 
-.navbar__menu .menu__link {
+.navbar__menu .nav__link {
   display: block;
   padding: 1em;
   font-weight: bold;
@@ -83,15 +85,10 @@ section {
   color: #000;
 }
 
-.navbar__menu .menu__link:hover {
-  background: #333;
-  color: #fff;
-  transition: ease 0.3s all;
-}
-
 /* Header Styles */
 .page__header {
   background: #fff;
+  background-color: black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -181,27 +178,17 @@ section:nth-of-type(3n) .landing__container::after {
   opacity: 0;
   transition: ease 0.5s all;
 }
-#nav__menu ul {
-  padding-left: 0;
-  /* margin: 0; */
-  text-align: center;
-}
 
 #nav__menu li {
   display: inline-block;
   margin-right: 25px;
 }
 #nav__menu .nav__link:hover {
-  background: red;
+  background: crimson;
   color: #fff;
 }
 #nav__menu .nav__link {
   color: antiquewhite;
-}
-
-.page__header {
-  position: fixed;
-  background-color: black;
 }
 
 section:nth-of-type(3n + 1) .landing__container::after {

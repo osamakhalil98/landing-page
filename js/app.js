@@ -21,23 +21,26 @@ const sections = document.querySelectorAll("section");
 const navUl = document.getElementById("navbar__list");
 const header = document.querySelector(".page__header");
 const nav = document.getElementById("nav__menu");
-const activeClass = document.getElementsByClassName("your-active-class");
+const title = document.getElementById("landing__title");
 let navLi = "";
-//setting the navbar dynamically
-function navbarSelection() {
+title.textContent = "Lorem ipsum dolor.";
+//setting the navbar dynamically by adding the li items to much with the number
+// of existing sections
+function dynamicNavbar() {
   sections.forEach((section) => {
     navLi += `<li> <a class="nav__link" href="#${section.id}">
       ${section.dataset.nav}</a></li>`;
   });
   navUl.innerHTML = navLi;
 }
-navbarSelection();
+dynamicNavbar();
 
 /**
  * End Global Variables
  * Start Helper Functions
  *
  */
+//Removing the active class from the section
 function removeActiveClass(section) {
   const id = section.getAttribute("id");
   document.querySelector(`#${id}`).classList.remove("your-active-class");
@@ -45,6 +48,7 @@ function removeActiveClass(section) {
     "background-color: linear-gradient(0deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.2) 100%);";
 }
 
+//ADDing the active class to the section and styling it
 function addActiveClass(section) {
   const id = section.getAttribute("id");
   document.querySelector(`#${id}`).classList.add("your-active-class");
@@ -54,7 +58,7 @@ function addActiveClass(section) {
 }
 
 // calcualting when the section is active
-function activeSection() {
+function makeActiveSection() {
   sections.forEach((section) => {
     let elementOffset = section.getBoundingClientRect();
     if (elementOffset.top <= 150 && elementOffset.bottom >= 150) {
@@ -64,7 +68,7 @@ function activeSection() {
     }
   });
 }
-document.addEventListener("scroll", activeSection);
+document.addEventListener("scroll", makeActiveSection);
 /**
  * End Helper Functions
  * Begin Main Functions

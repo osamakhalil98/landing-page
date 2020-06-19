@@ -4,7 +4,6 @@
 
 ## development
 - using selector methods like querySelector()
-- using scrolling methods like scrollIntoView()
 - styling elements using javascript 
 
  

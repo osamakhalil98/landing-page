@@ -35,6 +35,19 @@ h1 {
     margin: 2em 4rem 1em;
   }
 }
+@media only screen and (max-width: 559px) {
+  h1 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3em;
+    color: crimson;
+    margin-top: 6rem;
+  }
+  .navbar__menu {
+    padding-left: 0;
+    text-align: right;
+    height: fit-content;
+  }
+}
 
 h2 {
   border-bottom: 1px solid #cc1;

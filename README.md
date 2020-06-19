@@ -8,3 +8,6 @@
 - styling elements using javascript 
 
  
+## sources 
+- MDN doc about Element.getBoundingClientRect()
+- css tricks website 

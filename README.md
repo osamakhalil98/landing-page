@@ -1,5 +1,4 @@
 <h1 align="center">Landing Page Project</h1>
-## Manipulating The DOM
            
 ## This project is all about manipulating the dom
 
